@@ -18,44 +18,22 @@
 }
 
 #main {
-    float: left;
     background-color: aliceblue;
     width: 80%;
     min-height: 700px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-}
-
-.shop {
-    float: left;
-    background-color: aquamarine;
-    width: 20%;
-    min-height: 1320px;
-}
-
-#block {
-    background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#photo {
-    background-color: black;
-    width: 20px;
-    height: 20px;
 }
 
 .item-row {
     background-color: aqua;
     width: 100%;
-    height: 300px;
     flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 15px;
+    flex-flow: wrap;
 }
 
 .item {
@@ -93,17 +71,12 @@
 
 }
 
-.subSubItem1 {
+.additionPrice {
     background-color: yellow;
     width: 35px;
     height: 15px;
-}
-
-.box {
-    width: 80px;
-    height: 80px;
-    margin: 30px;
-    background-color: gray;
+    cursor: pointer;
+    -webkit-appearance: push-button;
 }
 
 .singleProduct {
@@ -137,4 +110,25 @@
     width: 95%;
     height: 20px;
     align-self: center;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.itemRow {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.basketContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.w-45 {
+    width: 45%;
 }
