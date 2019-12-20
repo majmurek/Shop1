@@ -8,7 +8,7 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="script.js"></script>
 </head>
-<body onload="onloadFunction()">
+<body onload="onLoadFunction()">
 
 <div id="container">
     <div id="logo">
@@ -19,28 +19,23 @@
 
     <div class="content flexRow">
         <div id="main">
-            <div class="item-row" id="itemsContainer"></div>
+            <div class="item-row" id="items-container"></div>
         </div>
-        <div class="basketContainer">
+        <div class="basket-container">
             <div>
                 <div class="flexRow">
-                    <button type="button" class="btn btn-primary w-45">Kup</button>
-                    <button type="button" class="btn btn-danger w-45">Wyczyść</button>
+                    <button type="button" class="btn btn-primary w-45" onclick="alert('Hello, Kupiłeś!!')">Kup</button>
+                    <button type="button" class="btn btn-danger w-45" onclick="clearBasket()">Wyczyść</button>
                 </div>
-                <div>
-                    <span>Cena koszyka:</span>
+                <div class="basket-price">
+                    <span>Cena koszyka: </span>
+                    <span id="price-sum">0</span>
                 </div>
             </div>
-            <div id="selectedItemsContainer"></div>
+            <div id="selected-items-container" class="selected-items-basket "></div>
         </div>
     </div>
-
 </div>
-<!--
-<img src="zdjecia/zdj1.jpg" alt="obraz"/>
-<img src="zdjecia/zdj2.jpg" alt="obraz"/>
--->
-
 
 </body>
 </html>
